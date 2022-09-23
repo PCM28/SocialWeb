@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SocialBook: Inicio</title>
+        <meta charset="utf-8"><!--Añadir tildes--->
+        <link href="estilos.css" type="text/css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d1b71afe47.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-left">
+                    <img src="images/logo.png"class="logo">
+                <ul>
+                    <li><img src="images/notification.png"></li>
+                    <li><img src="images/inbox.png"></li>
+                    <li><img src="images/video.png"></li>
+                </ul>
+                </div>
+                <div class="nav-right">
+                    <div class="search-box">
+                        <img src="images/search.png">
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <div class="imagen-user qwe" onclick="settingsToogle()"><!--qwe = online, indica que está en línes el usuario/cliente-->
+                        <a href="#"><img src="images/profile-pic.png"></a><!--PUTÍSIMO AMOOO TÍOOO-->
+                    </div>
+                </div>
+                
+                <!----------Settings-menu---------->
+                <div class="settings">
+
+                    <div id="dark" class="dark-on">
+                        <span></span>
+                    </div>
+
+                    <div class="settings-inner">
+                        <div class="user">
+                            <img src="images/profile-pic.png">
+                            <div>
+                                <p>John Nicholson</p>
+                                <a href="#">Ver tu perfil</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="user">
+                            <img src="images/feedback.png">
+                            <div>
+                                <p>Déjanos tus recomendaciones</p>
+                                <a href="#">Ayúdanos a mejorar el nuevo diseño</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="settings-links">
+                            <img src="images/setting.png" class="settings-icon">
+                            <a href="#">Configuracción & Privacidad <img src="images/arrow.png" width="10px"></a>
+                        </div>
+                        <div class="settings-links">
+                            <img src="images/help.png" class="settings-icon">
+                            <a href="#">Ayuda & Soporte <img src="images/arrow.png" width="10px"></a>
+                        </div>
+                        <div class="settings-links">
+                            <img src="images/display.png" class="settings-icon">
+                            <a href="#">Pantalla & Accesibilidad <img src="images/arrow.png" width="10px"></a>
+                        </div>
+                        <div class="settings-links">
+                            <img src="images/logout.png" class="settings-icon">
+                            <a href="#">Cerrar Sesión <img src="images/arrow.png" width="10px"></a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </nav>
+        </header>
+        <section class="container">
+            <!----------Left-sidebar---------->
+            <div class="left-sidebar">
+                <div class="links">
+                    <a href="#"><img src="images/news.png">Últimas Noticias</a>
+                    <a href="#"><img src="images/friends.png">Amigos</a>
+                    <a href="#"><img src="images/group.png">Grupos</a>
+                    <a href="#"><img src="images/marketplace.png">Tienda</a>
+                    <a href="#"><img src="images/watch.png">Videos</a>
+                    <a href="#">Ver Más</a>
+                </div>
+                <div class="shortcuts">
+                    <p>Tus enlaces</p>
+                    <a href="#"><img src="images/shortcut-1.png">Web Developers</a>
+                    <a href="#"><img src="images/shortcut-2.png">Web Design Course</a>
+                    <a href="#"><img src="images/shortcut-3.png">Full Stack Development</a>
+                    <a href="#"><img src="images/shortcut-4.png">Website Experts</a>
+                </div>
+            </div>
+            <!----------Main-sidebar---02/07/22------->
+            <div class="main-bar">
+
+                <!----------Galería de stories------->
+                <div class="story-gallery">
+                    <div class="story story1"><!--No se coloca coma, con colocar el segundo nombre de la clase a lado de la primera pasa a llamarse de esas 2 formas-->>
+                        <img src="images/upload.png">
+                        <p>Publicar Story</p>
+                    </div>
+                    <div class="story story2">
+                        <img src="images/member-1.png">
+                        <p>Alison</p>
+                    </div>
+                    <div class="story story3">
+                        <img src="images/member-2.png">
+                        <p>Jackson</p>
+                    </div>
+                    <div class="story story4">
+                        <img src="images/member-3.png">
+                        <p>Samona</p>
+                    </div>
+                    <div class="story story5">
+                        <img src="images/member-4.png">
+                        <p>John Doe</p>
+                    </div>
+                </div>
+
+                <!----------Caja de Publicación------->
+                <div class="write-post">
+                    <div class="user">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <small>Público <i class="fa-solid fa-caret-down"></i></small>
+                        </div>
+                    </div>
+
+                    <div class="post-input">
+                        <textarea rows="3" placeholder="Qué estás pensando, John?"></textarea>
+                        <div class="post-links">
+                            <a href="#"><img src="images/live-video.png">Direct</a>
+                            <a href="#"><img src="images/photo.png">Photo/Video</a>
+                            <a href="#"><img src="images/feeling.png">Sentimiento/Actividad</a>
+                        </div>
+                    </div>
+                </div>
+                <!--first post-->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user user-post">
+                            <img src="images/profile-pic.png">
+                            <div>
+                                <p>John Nicholson</p>
+                                <span>Junio 24 2021, 13:40 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a><!--Añade Menú 3 puntos-->
+                    </div>
+                    
+                    <p class="text">Suscríbete <span><b>@Instagram</b></span> YouTube channel para ver más videos sobre desarrollo web y diseño UI.
+                    <a href="#">#YouTubeChannel</a> <a href="#">#SocialWeb</a></p>
+                    <img src="images/feed-image-1.png" class="post-img">
+
+                    <div class="post-row">
+                        <div class="icons">
+                            <div><img src="images/like-blue.png"> 120</div>
+                            <div><img src="images/comments.png"> 45</div>
+                            <div><img src="images/share.png"> 20</div>
+                        </div>
+                        <div class="post-icon">
+                            <img src="images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--second post-->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user user-post">
+                            <img src="images/profile-pic.png">
+                            <div>
+                                <p>John Nicholson</p>
+                                <span>Junio 24 2021, 13:40 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    
+                    <p class="text">Dale me gusta y comparte este video con amigos, etiqueta <span><b>@SocialWeb</b></span> gágina de Facebook en tu post. Deja tus preguntas en los comentarios
+                    <a href="#">#YouTubeChannel</a> <a href="#">#instagram</a></p>
+                    <img src="images/feed-image-2.png" class="post-img">
+
+                    <div class="post-row">
+                        <div class="icons">
+                            <div><img src="images/like.png"> 120</div>
+                            <div><img src="images/comments.png"> 45</div>
+                            <div><img src="images/share.png"> 20</div>
+                        </div>
+                        <div class="post-icon">
+                            <img src="images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--third post-->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user user-post">
+                            <img src="images/profile-pic.png">
+                            <div>
+                                <p>John Nicholson</p>
+                                <span>Junio 24 2021, 13:40 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    
+                    <p class="text">Dale me gusta y comparte este video con amigos, etiqueta <span><b>@SocialWeb</b></span> gágina de Facebook en tu post. Deja tus preguntas en los comentarios
+                    <a href="#">#YouTubeChannel</a> <a href="#">#instagram</a></p>
+                    <img src="images/feed-image-3.png" class="post-img">
+
+                    <div class="post-row">
+                        <div class="icons">
+                            <div><img src="images/like.png"> 120</div>
+                            <div><img src="images/comments.png"> 45</div>
+                            <div><img src="images/share.png"> 20</div>
+                        </div>
+                        <div class="post-icon">
+                            <img src="images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--fourth post-->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user user-post">
+                            <img src="images/profile-pic.png">
+                            <div>
+                                <p>John Nicholson</p>
+                                <span>Junio 24 2021, 13:40 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    
+                    <p class="text">Dale me gusta y comparte este video con amigos, etiqueta <span><b>@SocialWeb</b></span> gágina de Facebook en tu post. Deja tus preguntas en los comentarios
+                    <a href="#">#YouTubeChannel</a> <a href="#">#instagram</a></p>
+                    <img src="images/feed-image-4.png" class="post-img">
+
+                    <div class="post-row">
+                        <div class="icons">
+                            <div><img src="images/like.png"> 120</div>
+                            <div><img src="images/comments.png"> 45</div>
+                            <div><img src="images/share.png"> 20</div>
+                        </div>
+                        <div class="post-icon">
+                            <img src="images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--fifth post-->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user user-post">
+                            <img src="images/profile-pic.png">
+                            <div>
+                                <p>John Nicholson</p>
+                                <span>Junio 24 2021, 13:40 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    
+                    <p class="text">Dale me gusta y comparte este video con amigos, etiqueta <span><b>@SocialWeb</b></span> gágina de Facebook en tu post. Deja tus preguntas en los comentarios
+                    <a href="#">#YouTubeChannel</a> <a href="#">#instagram</a></p>
+                    <img src="images/feed-image-5.png" class="post-img">
+
+                    <div class="post-row">
+                        <div class="icons">
+                            <div><img src="images/like.png"> 120</div>
+                            <div><img src="images/comments.png"> 45</div>
+                            <div><img src="images/share.png"> 20</div>
+                        </div>
+                        <div class="post-icon">
+                            <img src="images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="load">Cargar Más</button>
+                <div class="footer">
+                    <p>@Copyright 2022 - Social Web</p>
+                </div>
+            </div>
+            <!----------Right-sidebar---------->
+            <div class="right-sidebar">
+                <div class="sidebar-title">
+                    <h4>Events</h4>
+                    <a href="#">Ver Todo</a>
+                </div>
+                <div class="events">
+                    <div class="event">
+                        <div class="left-event">
+                            <h3>18</h3>
+                            <span>Marzo</span>
+                        </div>
+                        <div class="right-event">
+                            <h4>Social Media</h4>
+                            <p><i class="fa-solid fa-location-dot"></i> Willson Tech Park</p>
+                            <a href="#">Más Info</a>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="left-event">
+                            <h3>22</h3>
+                            <span>Junio</span>
+                        </div>
+                        <div class="right-event">
+                            <h4>Movil Marketing</h4>
+                            <p><i class="fa-solid fa-location-dot"></i> Willson Tech Park</p>
+                            <a href="#">Más Info</a>
+                        </div>
+                    </div> 
+                </div>
+                <!--02/07/22-->
+                <div class="sidebar-title">
+                    <h4>Anuncio</h4>
+                    <a href="#">Cerrar</a>
+                </div>
+                <img src="images/advertisement.png" class="sidebar-ads">
+
+                <div class="sidebar-title">
+                    <h4>Chat</h4>
+                    <a href="#">Ocultar Chat</a>
+                </div>
+
+                <div class="online-list">
+                    <div class="qwe"><!--Mismo nombre de clase que el punto verde primero del perfil-->
+                        <img src="images/member-1.png">
+                    </div>
+                    <p>Alison Mina</p>
+                </div>
+                <div class="online-list">
+                    <div class="qwe">
+                        <img src="images/member-2.png">
+                    </div>
+                    <p>Jackson Aston</p>
+                </div>
+                <div class="online-list">
+                    <div class="qwe">
+                        <img src="images/member-3.png">
+                    </div>
+                    <p>Samona Rose</p>
+                </div>
+            </div>
+            <script src="script.js"></script>
+        </section>
+    </body>
+</html>
